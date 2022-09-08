@@ -17,7 +17,7 @@ int main() {
 
 	for (int i = 0; i < 10; i++) {
 		if (i == 6 || i == 9)continue;
-		ans = max(ans, (a[6] + a[9] + 1) / 2); // celi를 구하기 위해 1 더하기
+		ans = max(ans, (a[6] + a[9] + 1) / 2); // ceil를 구하기 위해 1 더하기
 		cout << ans;
 	}
 }
