@@ -17,10 +17,10 @@ int main() {
 	while (n--) {
 		cin >> t;
 		while (cnt<=t) {
-			s.push(cnt++);
+			s.push(cnt++); // 필요한 숫자 만큼 입력
 			ans += "+\n";
 		}
-		if (s.top() != t) {
+		if (s.top() != t) { // stack.top()과 다르다면 스택 순열이 아님
 			cout << "NO";
 			return 0;
 		}
