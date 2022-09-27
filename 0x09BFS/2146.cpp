@@ -11,7 +11,8 @@ int dy[4] = { 0,1,0,-1 };
 int n;
 queue<tuple<int, int, int>> b_Q; 
 
-// 입력 함수
+
+// 입력 함수 O(N^2)
 void input() {
 	cin >> n;
 	for (int i = 0; i < n; i++) {
@@ -21,7 +22,7 @@ void input() {
 	}
 }
 
-// 육지를 구분하는 함수
+// 육지를 구분하는 함수 O(N^2)
 void count_island() {
 	queue<pair<int, int>> Q;
 	int cnt = 0;
@@ -57,7 +58,7 @@ void count_island() {
 	}
 }
 
-// 다리를 만드는 함수
+// 다리를 만드는 함수 O(N^2)
 int make_bridge() {
 	int opt = 0;
 	int stop_dist = 0;
@@ -99,3 +100,6 @@ int main() {
 	int ans = make_bridge();
 	cout << ans;
 }
+
+// 시간복잡도: O(3N^2)
+// 공간복잡도: O(4N^2)
