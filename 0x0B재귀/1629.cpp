@@ -4,11 +4,11 @@ using ll = long long;
 
 ll a, b, c, ans;
 
-ll func(ll b) { // ÀÎÀÚ °ªµµ long longÀ¸·Î ¼±¾ğÇÏ´Â °Í ÀØÁö ¾Ê±â
+ll func(ll b) { // ì¸ì ê°’ë„ long longìœ¼ë¡œ ì„ ì–¸í•˜ëŠ” ê²ƒ ìŠì§€ ì•Šê¸°
 	if (b == 1) return a % c;
 
 	ans = func(b / 2);
-	ans = ans * ans % c; // Ç®ÀÌ Áß¿¡ °ªÀÌ long long °ªÀ» ÃÊ°úÇÏÁö ¾Êµµ·Ï ½Ä Àû±â 
+	ans = ans * ans % c; // í’€ì´ ì¤‘ì— ê°’ì´ long long ê°’ì„ ì´ˆê³¼í•˜ì§€ ì•Šë„ë¡ ì‹ ì‘ì„± 
 	if (b % 2 == 0) {
 		return ans;
 	}
