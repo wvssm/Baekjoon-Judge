@@ -1,4 +1,4 @@
-// 백준 15657번 N°과 M (8)
+// 백준 15657번 N과 M (8)
 #include <bits/stdc++.h>
 using namespace std;
 
